@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Calendar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <div id="monthDisplay"></div>
+            <div>
+                <button id="backButton">Back</button>
+                <button id="nextButton">Next</button>
+            </div>
+            <div>
+                <button id="appointment">Create Appointment</button>
+            </div>
+        </div>
+        <div>
+            <select id="monthValue" name="Month">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </div>
+
+        <div id="weekdays">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+        </div>
+
+        <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+        <h2>Book an Appointment</h2>
+
+        <input id="eventFNameInput" placeholder="First Name" />
+        <input id="eventLNameInput" placeholder="Last Name" />
+        <input id="eventEmailInput" placeholder="Email" />
+        <select id="eventGenderInput" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="number" id="eventAgeInput" placeholder="Age" />
+        <input type="time" id="eventTimeInput" placeholder="Time" />
+        <!-- <input type="time" id="eventTimeInput" placeholder="Time" /> -->
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="newEventModalCreate">
+        <h2>Book an Appointment</h2>
+
+        <input id="eventFNameInputNew" placeholder="First Name" />
+        <input id="eventLNameInputNew" placeholder="Last Name" />
+        <input id="eventEmailInputNew" placeholder="Email" />
+        <select id="eventGenderInputNew" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="number" id="eventAgeInputNew" placeholder="Age" />
+        <input type="time" id="eventTimeInputNew" placeholder="Time" />
+        <input type="date" id="eventDateInput" placeholder="Date" />
+        <button id="saveButtonNew">Save</button>
+        <button id="cancelButtonNew">Cancel</button>
+    </div>
+
+
+    <div id="deleteEventModal">
+        <h2>Appointment For :</h2>
+
+        <label>Name :</label>
+        <div id="name">
+            <p id="FirstName"></p>
+            <p id="LastName"></p>
+        </div>
+        <label>Email :</label>
+        <p id="Email"></p>
+        <label>Age :</label>
+        <p id="Age"></p>
+        <label>Gender :</label>
+        <p id="Gender"></p>
+        <label>Time :</label>
+        <p id="Time"></p>
+        <label>Date :</label>
+        <p id="Date"></p>
+
+
+
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

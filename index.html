@@ -81,9 +81,10 @@
             <option value="Female">Female</option>
             <option value="Other">Other</option>
         </select>
-        <input type="number" id="eventAgeInputNew" placeholder="Age" />
-        <input type="time" id="eventTimeInputNew" placeholder="Time" />
+        <input type="number" id="eventAgeInputNew" onkeydown="javascript: return event.keyCode == 69 ? false : true" placeholder="Age" />
         <input type="date" id="eventDateInput" placeholder="Date" />
+        <input type="time" id="eventTimeInputNew" placeholder="Time" />
+       
         <button id="saveButtonNew">Save</button>
         <button id="cancelButtonNew">Cancel</button>
     </div>

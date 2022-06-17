@@ -185,7 +185,7 @@ function saveEventNew() {
         alert('Please provide a valid email address')
 
     } else {
-        if (eventFNameInputNew.value && eventLNameInputNew.value && eventEmailInputNew.value && eventTimeInputNew.value) {
+        if (eventFNameInputNew.value && eventLNameInputNew.value && eventEmailInputNew.value && eventTimeInputNew.value && eventDateInput.value) {
             eventFNameInputNew.classList.remove('error');
             eventLNameInputNew.classList.remove('error');
             eventEmailInputNew.classList.remove('error');
